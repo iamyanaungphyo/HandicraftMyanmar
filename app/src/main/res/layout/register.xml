@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/logo_image" />
+
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="20dp"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:paddingLeft="29dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="310dp"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/etRegisterName"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="#ffffff" />
+
+    <EditText
+        android:id="@+id/etRegisterPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="16dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="29dp"
+        android:textColorHint="@color/hintcolor"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="310dp"
+        android:layout_height="1.5dp"
+        android:layout_below="@id/etRegisterPhone"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/cityscape"
+        android:drawablePadding="20dp"
+        android:paddingLeft="29dp"
+        android:text="Region"
+        android:textColor="#ffff"
+        android:textSize="16dp" />
+
+
+    <Spinner
+        android:id="@+id/register_region_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/tvRegion"
+        android:entries="@array/region"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+
+        />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="310dp"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/tvRegion"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/cityscape"
+        android:drawablePadding="20dp"
+        android:text="City"
+        android:textColor="#ffff"
+        android:textSize="16dp"
+        android:paddingLeft="29dp"
+        android:layout_below="@+id/view3"/>
+
+    <Spinner
+        android:id="@+id/register_city_spinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view3"
+        android:layout_toRightOf="@id/tvCity"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="4dp"
+
+        android:spinnerMode="dropdown" />
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="310dp"
+        android:layout_height="1.5dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/tvCity"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:paddingLeft="29dp"
+        android:textColorHint="@color/hintcolor"
+        android:layout_below="@+id/view4"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="310dp"
+        android:layout_height="1.5dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etRegisterConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="16dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="29dp"
+        android:textColorHint="@color/hintcolor" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="230dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/etRegisterConfirmPassword"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:text="SIGN UP"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

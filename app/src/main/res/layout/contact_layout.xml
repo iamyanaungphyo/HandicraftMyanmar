@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/toadvertiseimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/blue_icon" />
+    <!-- android:src="@drawable/logo"-->
+
+    <TextView
+        android:id="@+id/tv1oftoadvertise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toadvertiseimage"
+        android:layout_gravity="center_horizontal"
+        android:text="မင်္ဂလာပါ ခင်ဗျာ......."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <TextView
+        android:id="@+id/tv2toadvertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1oftoadvertise"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Handicraft Myanmar Applicationမှ ကြိုဆိုပါတယ်...."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/advertisePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/phone"
+            android:padding="16dp"
+            android:text="09791251493"
+            android:textSize="18dp"
+android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv2toadvertise"
+            />
+
+        <Button
+            android:id="@+id/advertiseFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/contact_facebook_btm"
+            android:drawableRight="@drawable/facebook_icon"
+            android:text="Contact with"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/advertisePhone"/>
+
+
+        <Button
+            android:id="@+id/advertiseGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+   android:padding="14dp"
+            android:background="@drawable/edittext"
+            android:drawableRight="@drawable/gmail"
+            android:text="Contact with"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/advertiseFacebook"
+            />
+
+
+
+</RelativeLayout>

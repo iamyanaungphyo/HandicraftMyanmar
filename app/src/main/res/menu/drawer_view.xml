@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_head"
+            android:icon="@drawable/ic_drawer_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_sale"
+            android:icon="@drawable/wallet"
+            android:title="@string/nav_sale" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/employee"
+            android:title="@string/nav_contact" />
+
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_drawer_about"
+            android:title="@string/nav_about" />
+        <!-- <item
+             android:id="@+id/nav_policy"
+             android:icon="@drawable/ic_drawer_home"
+             android:title="@string/nav_privacy" />-->
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/nav_settings" />
+
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/nav_logout" />
+        </menu>
+
+
+
+
+
+
+    </group>
+</menu>

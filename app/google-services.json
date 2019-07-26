@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "789757046961",
+    "firebase_url": "https://testproj-e41ba.firebaseio.com",
+    "project_id": "testproj-e41ba",
+    "storage_bucket": "testproj-e41ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789757046961:android:c44ae5e16ff80b93",
+        "android_client_info": {
+          "package_name": "com.team02.handicraftmyanmar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789757046961-ovqrd5qmdh79m3njt5adaj7qq9jrsg0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Ne3l9egLfNhJ5aDHNOBikI1oPlRswHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
